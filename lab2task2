@@ -1,0 +1,14 @@
+# Ввод исходных данных
+price = float(input("Цена одного товара: "))
+quantity = int(input("Количество товаров: "))
+discount_percent = float(input("Скидка (%): "))
+
+# Расчёт стоимости
+total = price * quantity
+discount = total * discount_percent / 100
+final_price = total - discount
+
+# Вывод результатов
+print("Стоимость без скидки:", total)
+print("Размер скидки:", discount)
+print("К оплате:", final_price)
